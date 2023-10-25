@@ -3,7 +3,7 @@
    --------------------------------------------------------- */
 
 function weatherBalloon() {
-  fetch('http://api.weatherapi.com/v1/forecast.json?key=30a12de67adf46c2ab5125216231110&q=02828&days=6&aqi=no&alerts=no')
+  fetch('https://api.weatherapi.com/v1/forecast.json?key=30a12de67adf46c2ab5125216231110&q=02828&days=6&aqi=no&alerts=no')
     .then(function (resp) { return resp.json() }) // Convert data to json
     .then(function (data) {
       drawWeather(data);
